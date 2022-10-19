@@ -9,5 +9,18 @@ public class dt {
         c = (int) d;
         a = (float) d;
         System.out.println(c);
+
+        char ch = 'a';
+        ch = 6230;
+        ch = (char) (ch + 23);
+
+        System.out.println(ch);
+
+        System.out.println(20 + 30 + "Hello" + 10 + 20);
+        System.out.println(2 + ' ' + 5);
+        System.out.println(2 + " " + 5);
+        System.out.println();
+        System.out.println();
+        System.out.println();
     }
 }
