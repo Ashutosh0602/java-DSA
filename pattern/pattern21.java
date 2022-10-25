@@ -1,3 +1,5 @@
+
+// Delhi's odd even
 import java.util.Scanner;
 
 public class pattern21 {
@@ -13,17 +15,19 @@ public class pattern21 {
                 int o = 0;
                 int e = 0;
                 for (int m = 0; m < sarr.length; m++) {
-                    if (Integer.parseInt(sarr[m]) / 2 == 0) {
+                    if (Integer.parseInt(sarr[m]) % 2 == 0) {
                         e = e + Integer.parseInt(sarr[m]);
 
                     } else {
                         o = o + Integer.parseInt(sarr[m]);
                     }
                 }
+                // System.out.println(o);
+                // System.out.println(e);
                 if (o % 3 == 0 || e % 4 == 0) {
-                    System.out.println("No");
-                } else {
                     System.out.println("Yes");
+                } else {
+                    System.out.println("No");
                 }
             }
         }
