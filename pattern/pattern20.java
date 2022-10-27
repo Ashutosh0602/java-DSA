@@ -22,7 +22,6 @@ public class pattern20 {
                 System.out.print("1");
                 System.out.println("");
             }
-            // System.out.println(2 % 2);
         }
     }
 }
