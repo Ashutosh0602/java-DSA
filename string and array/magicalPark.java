@@ -31,9 +31,9 @@ public class magicalPark {
         }
         if (Integer.parseInt(s[2]) <= S) {
             System.out.println("Yes");
+            System.out.println(S);
         } else {
             System.out.println("No");
         }
-        System.out.println(S);
     }
 }
