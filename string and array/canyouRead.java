@@ -5,23 +5,21 @@ public class canyouRead {
 
     public static void main(String[] args) {
         String str = snc.nextLine();
-        int start = 0;
+        int start = 1;
         while (start <= str.length()) {
-            String nStr = "";
-            for (int i = start; i < str.length(); i++) {
-                if (i == start) {
-                    nStr = nStr + str.charAt(i);
-                    // start = start + 1;
-                } else {
-                    if (Character.toUpperCase(str.charAt(i)) == str.charAt(i)) {
-                        start = start + nStr.length();
-                        break;
-                    }
-                    nStr = nStr + str.charAt(i);
+            String nstr = "";
+            int upperCount = 0;
+            for (int i = start - 1; i < str.length(); i++) {
+                if (str.charAt(i) == Character.toUpperCase(str.charAt(i))) {
+                    upperCount++;
                 }
+                if (upperCount == 2) {
+                    break;
+                }
+                nstr = nstr + str.charAt(i);
+                start++;
             }
-            System.out.println(nStr);
+            System.out.println(nstr);
         }
-        System.out.println(str);
     }
 }
