@@ -10,7 +10,7 @@ public class lastIndex {
     }
 
     public static int last(int[] arr, int index, int data) {
-        if (index == arr.length - 1) {
+        if (index == arr.length) {
             return -1;
         }
         int state = last(arr, index + 1, data);

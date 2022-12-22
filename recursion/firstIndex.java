@@ -11,7 +11,7 @@ public class firstIndex {
     }
 
     public static int first(int[] arr, int index, int data) {
-        if (index == arr.length - 1) {
+        if (index == arr.length) {
             return -1;
         }
         if (arr[index] == data) {

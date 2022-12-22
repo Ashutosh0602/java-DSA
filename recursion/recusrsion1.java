@@ -12,7 +12,7 @@ public class recusrsion1 {
     }
 
     public static void reverse(int n) {
-        // System.out.println(n);
+        System.out.println(n);
         // n--;
         if (n > 1) {
             reverse(n - 1);
