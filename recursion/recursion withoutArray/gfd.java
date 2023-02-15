@@ -2,6 +2,7 @@ public class gfd {
     public static void main(String[] args) {
         // System.out.println(myPow(2.000, -2));
         System.out.println(9 / 4);
+        System.out.println(9 / 4);
     }
 
     // public static double myPow(double x, int n) {
