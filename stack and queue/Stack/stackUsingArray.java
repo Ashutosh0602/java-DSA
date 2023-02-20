@@ -5,8 +5,10 @@ package Stack;
  */
 public class stackUsingArray {
 
-    private int[] data;
-    private int top;
+    protected int[] data;
+    protected int top;
+    // private int[] data;
+    // private int top;
 
     public static final int DEFAULT_CAPACITY = 10;
 
