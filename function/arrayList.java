@@ -12,5 +12,6 @@ public class arrayList {
         list.remove(3);
         System.out.println(list.size());
         System.out.println(list.get(2));
+        System.out.println(list.get(3));
     }
 }
