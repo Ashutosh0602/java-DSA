@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class mazePath {
     public static void main(String[] args) {
-        System.out.println(getPath(0, 0, 3, 3));
+        System.out.println(getPath(0, 0, 2, 2));
     }
 
     public static ArrayList<String> getPath(int cr, int cc, int er, int ec) {

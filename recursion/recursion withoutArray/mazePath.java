@@ -2,7 +2,7 @@ public class mazePath {
     static int k = 0;
 
     public static void main(String[] args) {
-        path(0, 0, 5, 5, "");
+        path(0, 0, 2, 2, "");
         System.out.println(k);
 
     }
