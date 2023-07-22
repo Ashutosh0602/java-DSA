@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.LinkedList;
 
-public class KthElement {
+public class middleTerm {
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         LinkedList list = new LinkedList();
@@ -53,6 +53,8 @@ public class KthElement {
             } else if (str.startsWith("kthFromEnd")) {
                 int idx = Integer.parseInt(str.split(" ")[1]);
                 System.out.println(list.kthFromLast(idx));
+            } else if (str.startsWith("mid")) {
+                System.out.println(list.mid());
             }
             str = br.readLine();
         }
@@ -256,19 +258,30 @@ public class KthElement {
         }
 
         public int kthFromLast(int k) {
+            Node slow = head;
+            Node fast = head;
+            for (int i = 0; i < k; i++) {
+                fast = fast.next;
+            }
+
+            while (fast != tail) {
+                slow = slow.next;
+                fast = fast.next;
+            }
+
+            return slow.data;
+        }
+
+        public int mid() {
             // write your code here
             Node s = head;
             Node f = head;
 
-            int cnt = 0;
-
-            while (f.next != null) {
-                if (cnt >= k) {
-                    s = s.next;
-                }
-                f = f.next;
-                cnt++;
+            while (f.next != null && f.next.next!=null) {
+                s = s.next;
+                f = f.next.next;
             }
+
             return s.data;
         }
     }
