@@ -1,5 +1,8 @@
 package protects;
 
 public class B {
-    A ob = new A();
+    public static void main(String[] args) {
+        A ob = new A();
+        System.out.println(ob.val2);
+    }
 }
